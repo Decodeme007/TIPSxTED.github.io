@@ -1,0 +1,27 @@
+/* preloader  */
+#preloader{
+    background: rgb(13, 13, 13) url("/images/loading-pre.gif") no-repeat center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* About Section  */
+.hov {
+    display: block;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.hov1 .hov.active {
+    display: block;
+    background-color: rgb(252, 49, 80);
+}
+
+.hov:hover:active {
+    display: block;
+    background-color: rgb(252, 49, 80);
+}
+
+
