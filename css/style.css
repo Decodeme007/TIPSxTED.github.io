@@ -1,27 +1,234 @@
-/* preloader  */
-#preloader{
-    background: rgb(13, 13, 13) url("/images/loading-pre.gif") no-repeat center;
-    background-size: 40%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
+/* Importing icon from font-awesome  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+/* universal  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* About Section  */
-.hov {
+
+/* preloader  */
+#preloader{
+  background: rgb(13, 13, 13) url("/images/loading-pre.gif") no-repeat center;
+  background-size: 40%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+/* preloader end  */
+
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+/* custom scroll bar End*/
+
+
+/* navigatin bar  */
+.content-navb{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.Mynavbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 2%;
+  transition: all 0.3s ease;
+  background-color: rgb(255, 255, 255);
+}
+.Mynavbar.sticky{
+  background: #fffdfd;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.Mynavbar .content-navb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Mynavbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+  text-align: center;
+}
+.menu-list li a{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+.menu-list li a::after{
+    content:'';
+    height:5px;
+    width: 0;
+    background-color: red;
+    margin:auto;
     display: block;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    text-align: center;
+}
+.menu-list li a:hover::after{
+    width: 80%;
+    transition:width 0.5s linear;
+    text-align: center;
+}
+.icon-nav{
+  color: rgb(7, 1, 1);
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content-navb{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content-navb{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content-navb{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon-nav{
+    display: block;
+  }
+  .icon-nav.hide{
+    display: none;
+  }
+  .Mynavbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .Mynavbar.show .menu-list{
+    left: 0%;
+  }
+  .Mynavbar .menu-list li{
+    margin-top: 45px;
+  }
+  .Mynavbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color:#f1f1f1;
+  }
+  .Mynavbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .Mynavbar .logo a{
+    font-size: 27px;
+  }
+}
+/* Navigation bar css end  */
+
+
+
+/* Home section started  */
+.home .hero-section {
+    height: 760px;
+    background-image: url(/images/background.9baf20a6.svg);
+    background-size: 100% 100%;
+}
+
+.home video {
+    display: block;
+    height: 45vh;
+}
+
+.home .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+.home .icon{
+    font-size: 40px;
+    color: #fc3150;
+    margin-bottom: 12px;
+    width: 0.875em
+}
+
+.home .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:768px){
+    .home .icon{
+        font-size: 26px;
+    }
+    .home .hero-section{
+        background-size: auto;
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .home video{
+        width: 90%;
+        height: 60%;
+    }
+}
+/* Home section End*/
+
+
+/* About Section  Start*/
+.hov {
+  display: block;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 .hov1 .hov.active {
-    display: block;
-    background-color: rgb(252, 49, 80);
+  display: block;
+  background-color: rgb(252, 49, 80);
 }
 
 .hov:hover:active {
-    display: block;
-    background-color: rgb(252, 49, 80);
+  display: block;
+  background-color: rgb(252, 49, 80);
 }
-
-
+/* about section end  */
