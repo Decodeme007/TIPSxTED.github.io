@@ -167,51 +167,15 @@
 
 
 /* Home section started  */
-.home .hero-section {
-    height: 760px;
-    background-image: url(/images/background.9baf20a6.svg);
-    background-size: 100% 100%;
+#Home-content1 h3 , #Home-content2 h3{
+  font-weight: 700;
 }
-
-.home video {
-    display: block;
-    height: 45vh;
-}
-
-.home .content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 0;
-}
-.home .icon{
-    font-size: 40px;
-    color: #fc3150;
-    margin-bottom: 12px;
-    width: 0.875em
-}
-
-.home .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media only screen and (max-width:768px){
-    .home .icon{
-        font-size: 26px;
-    }
-    .home .hero-section{
-        background-size: auto;
-        height: 90vh;
-    }
-}
-
-@media only screen and (max-width:425px){
-    .home video{
-        width: 90%;
-        height: 60%;
-    }
+#Home{
+  background-image: url("/images/background.9baf20a6.svg");
+  background-image: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: 100% 100%;
 }
 /* Home section End*/
 
