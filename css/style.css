@@ -181,23 +181,29 @@
 
 
 /* About Section  Start*/
-.hov {
-  display: block;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+#about-images{
+  border: 4px solid red;
+  margin: 30px 0px;
+  width: 380px;
+  height: 210px;
 }
 
-.hov1 .hov.active {
-  display: block;
-  background-color: rgb(252, 49, 80);
+#about-content p{
+  text-align: justify;
+  text-indent: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  word-spacing: 3px;
+  text-shadow: 1px 1px 1px rgb(248, 220, 220);
 }
 
-.hov:hover:active {
-  display: block;
-  background-color: rgb(252, 49, 80);
-}
-@media only screen and (max-width:768px){
-  .About-section{
-    margin-top:200px;
-  }
+.about-button-cust{
+  border:3px solid transparent!important;
+  margin-left:10px !important;
+  background-color: #3f3f3f !important;
+  color:white !important;
+  font-size: 20px;
+  font-weight: 600;
 }
 /* about section end  */
