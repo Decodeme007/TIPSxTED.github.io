@@ -189,7 +189,7 @@
 }
 
 #about-content p{
-  text-align: justify;
+  text-align: left;
   text-indent: 20px;
   font-weight: 500;
   letter-spacing: 1px;
