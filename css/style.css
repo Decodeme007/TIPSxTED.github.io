@@ -206,4 +206,83 @@
   font-size: 20px;
   font-weight: 600;
 }
+.about-button-cust:hover{
+  background-color: red!important;
+}
 /* about section end  */
+
+
+/* speakers start  */
+#speaker{
+  background-image: url(https://www.tedxbvcoe.com/static/media/speakers-background.6516df3d.svg);
+  background-image: cover;
+  background-attachment: scroll;
+}
+
+#speaker h1{
+  font-size: 70px;
+  font-weight: 800;
+  color: red;
+  padding:20px;
+}
+
+#speaker button{
+  margin-bottom:50px;
+  background-color: red;
+  border-radius: 20px;
+  padding:8px 22px;
+  color:white;
+  border:none;
+}
+#speaker button:hover{
+  background-color: white;
+  color: red;
+  border:2px solid red;
+  font-size:15px;
+  font-weight: 500;
+}
+
+/* speakers End */
+
+
+/* ticket section start  */
+#ticket{
+  background-image: url(https://www.tedxbvcoe.com/static/media/background.9baf20a6.svg);
+  background-image: cover;
+}
+#ticket h2{
+  font-size: 45px;
+  font-weight: 600;
+  color: red;
+}
+
+#ticket-price-heading, #ticket-price-heading1, #ticket-price-heading2{
+  background-color: #fff7f7;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.ticket-price-heading{
+  color: red;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#ticket-full-card{
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 520px;
+}
+#ticket a{
+  background-color: red!important;
+  border:none;
+  border-radius: 20px;
+  padding:7px 25px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 20px;
+}
+#ticket a:hover{
+  background-color: #3f3f3f!important;
+}
+/* ticket section start  */
+
