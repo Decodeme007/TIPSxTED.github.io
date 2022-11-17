@@ -373,3 +373,26 @@
   background-color: #222;
 }
 /* contact end  */
+
+
+/* footer section start  */
+
+#footer-section button{
+  border:2px solid transparent;
+  color:white;
+  background-color: red;
+  padding:8px 22px;
+  border-radius: 20px;
+}
+
+#footer-section button:hover{
+  background-color: white;
+  border:3px solid red;
+  color:red;
+}
+
+.footer-icons a i{
+  font-size: 30px;
+}
+
+/* footer section End  */
