@@ -334,7 +334,6 @@
   background-image: url(https://www.tedxbvcoe.com/static/media/background.d5366393.svg);
 }
 #faq .accordion-item{
-  border:1px solid black;
   margin-bottom: 20px;
   border-radius: 0px 0px 16px 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
