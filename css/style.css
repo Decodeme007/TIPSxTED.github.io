@@ -266,8 +266,25 @@ margin-left: 70px;
 /* speakers start  */
 #speaker{
   background-image: url(https://www.tedxbvcoe.com/static/media/speakers-background.6516df3d.svg);
-  background-image: cover;
+  background-size: cover;
   background-attachment: scroll;
+}
+
+@media (max-width:720px) {
+  #speaker{
+    background-image: url(https://www.tedxbvcoe.com/static/media/speakers-background.6516df3d.svg);
+    background-position: top right;
+    background-size: cover;    
+  }
+}
+
+@media (max-width:430px) {
+  #speaker{
+    background-image: url(https://www.tedxbvcoe.com/static/media/speakers-background.6516df3d.svg);
+    background-position: top 10% right 30% !important;
+    background-size: cover;    
+    margin-left: 40px;
+  }
 }
 
 #speaker h1{
