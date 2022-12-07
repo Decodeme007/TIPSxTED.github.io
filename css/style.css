@@ -158,6 +158,21 @@
   .Mynavbar.show .menu-list li a{
     margin-left: 0px;
   }
+  .menu-list li::after{
+    content:'';
+    height:5px;
+    width: 0;
+    background-color: red;
+    margin:auto;
+    display: block;
+    text-align: center;
+}
+.menu-list li:hover::after{
+    width: 40%;
+    transition:width 0.5s linear;
+    text-align: center;
+}
+
 }
 @media (max-width: 380px) {
   .Mynavbar .logo a{
