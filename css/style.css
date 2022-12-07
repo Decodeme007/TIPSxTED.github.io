@@ -71,14 +71,16 @@
   text-align: center;
 }
 .menu-list li a{
+  text-decoration: none;
   color: rgb(0, 0, 0);
+}
+.menu-list li{
   font-size: 16px;
   font-weight: 600;
   padding-left: 30px;
-  text-decoration: none;
   text-align: center;
 }
-.menu-list li a::after{
+.menu-list li::after{
     content:'';
     height:5px;
     width: 0;
@@ -87,8 +89,8 @@
     display: block;
     text-align: center;
 }
-.menu-list li a:hover::after{
-    width: 80%;
+.menu-list li:hover::after{
+    width: 100%;
     transition:width 0.5s linear;
     text-align: center;
 }
