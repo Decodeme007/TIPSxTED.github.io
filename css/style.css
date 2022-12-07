@@ -247,6 +247,19 @@ margin-left: 70px;
 .about-button-cust:hover{
   background-color: red!important;
 }
+
+@media (max-width: 470px) {
+  #about{
+    margin-left: 30px;
+  }
+}
+
+@media (max-width:370px){
+  #about button{
+    font-size: 20px !important;
+    padding: 5px 5px !important;
+  }
+}
 /* about section end  */
 
 
